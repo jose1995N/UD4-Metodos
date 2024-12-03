@@ -5,22 +5,26 @@ que pinte una línea con el carácter especificado.*/
 import java.util.Scanner;
 
 public class ejercicio03 {
-    static void linea(char caracter, int repeticiones) {
-        for (int i = 0; i < repeticiones; i++) {
-            System.out.print(caracter);
+    static void linea(int entrada) {
+        int resto =entrada;
+        for (int i = 0; i < entrada; i++) {
+            for (int j = resto; j > 0 ; j--) {
+                System.out.print("*");
+            }
+           resto= resto-1;
+           System.out.println();
         }
-        System.out.println();
+        
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce la altura del triángulo: ");
         int entrada = scanner.nextInt();
-
-        for (int i = 1; i <= entrada; i++) {
-            linea('*', i);
+        linea(entrada);//invoco al metdo
+       
         }
     }
-}
+
 
 
