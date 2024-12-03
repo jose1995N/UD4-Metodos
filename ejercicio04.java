@@ -10,11 +10,11 @@ import java.util.Scanner;
 public class ejercicio04 {
    
     public static String convierteArrayEnString(int[] a) {
-        String resultado = "";
-        for (int numero : a) {
-            resultado += numero;
+        String numeros = "";
+        for (int i = 0; i < a.length; i++) {
+            numeros = numeros + a[i];
         }
-        return resultado;
+        return numeros;
     }
 
     public static void main(String[] args) {
