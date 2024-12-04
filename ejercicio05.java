@@ -48,7 +48,7 @@ import java.util.Scanner;
     
             
             System.out.print("Unidos serían: ");
-            for (int num : resultado) {
+            for (int num + resultado) {
                 System.out.print(num + " ");
             }
         }
